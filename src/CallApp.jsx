@@ -67,10 +67,15 @@ const CallApp = () => {
     const answerCall = () => {
         setCallAccepted(true);
         const peer = new Peer({
-            initiator: false,
+            initiator: true,
             trickle: false,
             stream: stream,
         });
+        
+        peer.on('error', (err) => {
+            console.error('Peer error:', err);
+        });
+        
 
         peer.on('signal', (data) => {
             socket.emit('answerCall', { signal: data, to: caller });
