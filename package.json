@@ -26,6 +26,10 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5"
+    "events": "^3.3.0",
+    "global": "^4.4.0",
+    "process": "^0.11.10",
+    "vite": "^4.4.5",
+    "vite-compatible-readable-stream": "^3.6.1"
   }
 }
