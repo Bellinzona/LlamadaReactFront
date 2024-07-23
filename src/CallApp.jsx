@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import Peer from 'simple-peer';
 import "./CallApp.css";
 
-const socket = io('http://localhost:4000');
+const socket = io('https://llamadareactsv.onrender.com');
 
 const CallApp = () => {
     const [me, setMe] = useState('');
